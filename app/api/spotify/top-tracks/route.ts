@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import spotifyApi, { setSpotifyAccessToken } from "../../../../util/spotifyApi";
 import { getAuthenticatedSession } from "../../../../util/auth";
-
 export async function GET() {
   try {
     const accessToken = await getAuthenticatedSession();
