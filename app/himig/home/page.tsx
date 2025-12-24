@@ -1,6 +1,6 @@
 "use client";
-import Card from "@/components/card/Card";
-import Card2 from "@/components/card/Card2";
+import Card from "@/app/components/card/Card";
+import Card2 from "@/app/components/card/Card2";
 import SkeletonLoader from "@/app/components/common/SkeletonLoader";
 import usePlaySong from "@/app/hooks/usePlaySong";
 import {
