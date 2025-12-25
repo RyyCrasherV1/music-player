@@ -6,7 +6,7 @@ import { SessionProvider } from "./components/SessionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Spotify Dashboard Made Zhou",
+  title: "Spotify Dashboard",
   description: "View your Spotify stats",
 };
 
