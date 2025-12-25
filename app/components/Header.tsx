@@ -1,11 +1,23 @@
 "use client";
-import { FaHeadphones } from "react-icons/fa";
+
+import { useSession, signOut } from "next-auth/react";
 
 export default function Header() {
+  const { data: session } = useSession();
+
   return (
-    <header className="p-4 bg-gray-900 text-white flex items-center gap-2">
-      <FaHeadphones size={24} />
-      <h1 className="text-xl font-bold">Himig Play</h1>
+    <header className="bg-black bg-opacity-50 p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-2xl font-bold text-white">Spotify Dashboard</h1>
+        {session && (
+          <button
+            onClick={() => signOut()}
+            className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
+          >
+            Logout
+          </button>
+        )}
+      </div>
     </header>
   );
 }
