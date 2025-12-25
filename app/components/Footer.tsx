@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="p-4 bg-gray-900 text-white text-center mt-8">
-      &copy; 2025 Himig Play. All rights reserved.
+    <footer className="bg-black bg-opacity-50 p-4 text-center text-white">
+      <p>© 2024 Spotify Dashboard. Made with Rey/Zhou</p>
     </footer>
   );
 }
